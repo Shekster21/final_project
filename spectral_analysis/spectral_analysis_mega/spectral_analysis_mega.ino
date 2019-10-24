@@ -41,6 +41,7 @@ float getSpectrum(){
   FFT.Windowing(Real,SAMPLE,FFT_WIN_TYP_HANN,FFT_FORWARD);
   FFT.Compute(Real,Imag,SAMPLE,FFT_FORWARD);
   FFT.ComplexToMagnitude(Real,Imag,SAMPLE);
+  
   freq = FFT.MajorPeak(Real,SAMPLE,SAMPLING_FREQUENCY);
   return freq; //returns the fundamental frequency
   }
