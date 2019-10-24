@@ -14,7 +14,7 @@
 
 #include <WiFiClientSecureBearSSL.h>
 // Fingerprint for demo URL, expires on June 2, 2019, needs to be updated well before this date
-const uint8_t fingerprint[20] = {0x95,0x23,0xc7,0x60,0x12,0xd0,0x3d,0x96,0x18,0x98,0xcf,0xbe,0x1a,0xfd,0x87,0xf6,0x55,0x8f,0x29,0x3d};
+const uint8_t fingerprint[20] = **;
 
 ESP8266WiFiMulti WiFiMulti;
 
@@ -34,7 +34,7 @@ void setup() {
   }
 
   WiFi.mode(WIFI_STA);
-  WiFiMulti.addAP("Gooner21", "aaronramsey");
+  WiFiMulti.addAP(**);
 }
 
 void loop() {
